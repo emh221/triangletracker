@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +10,27 @@
 </head>
 <body>
   <div class="container">
-
+    <div class="text-center">
+      <h1>Triangle Tracker</h1>
+      <h2>To find out what kind of triangle you workin' wit', enter the lengths of each of the 3 sides below and you'll get mo' betta' informashun. You can use any units just make sure you use the same units on all 3 for an accurate response.</h2>
+      <form id="triangle">
+        <div class="form-group">
+          <label for="side1">Triangle side 1 length:</label>
+          <input id="side1" class="form-control" type="number">
+        </div>
+        <div class="form-group">
+          <label for="side2">Triangle side 2 length:</label>
+          <input type="number" class="form-control" id="side2">
+        </div>
+        <div class="form-group">
+          <label for="side3">Triangle side 3 length:</label>
+          <input type="number" id="side3" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-warning">If you entered 3 sides then CLICK!!</button>
+      </form>
+      <div id="output">
+        The triangle you are workin' wit' is a : <span id="triangletype"></span>
+      </div>
+    </div>
   </div>
 </body>
