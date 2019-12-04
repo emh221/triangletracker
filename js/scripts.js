@@ -31,15 +31,16 @@ $(document).ready(function(){
     var side3 = parseInt($("input#side3").val());
 
     if (checktriangle(side1,side2,side3) !== true) {
-      $("#triangletype").text("this is not a triangle.")
+      var text = "this is not a triangle."
     } else if (checkequilateral(side1,side2,side3)) {
-      $("#triangletype").text("this is an equilateral triangle.");
+      var text = "this is an equilateral triangle."
     } else if (checkisoceles(side1,side2,side3)) {
-      $("#triangletype").text("this is an isoceles triangle.");
+      var text = "this is an isoceles triangle."
     } else {
-      $("#triangletype").text("this is a scalene triangle!")
+      var text = "this is a scalene triangle!"
     }
 
+    $("#triangletype").text(text);
     $("#output").show();
 
   });
